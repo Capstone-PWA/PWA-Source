@@ -1,0 +1,84 @@
+
+/* CSS variables for colours. */
+:root {
+    --title: rgba(255, 255, 255, 1);
+    --primary: rgba(23, 56, 110, 1);
+    --secondary: rgba(34, 83, 163, 1);
+    --tertiary: rgba(30, 105, 227, 1);
+}
+
+/* ----------Navigation Menus----------- */
+
+nav {
+    background: var(--primary);
+    border-bottom: 10px solid var(--secondary);
+}
+
+nav a {
+    text-transform: uppercase;
+    color: var(--title);
+}
+
+nav a span {
+    font-weight: bold;
+}
+
+/* Class: Icon in sidenav*/
+nav .sidenav-trigger {
+    margin: 0;
+}
+
+/* -------------Index Page-------------- */
+
+.action {
+    margin-top: 20px;
+}
+
+.card-panel.action {
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px, 1px, 3px, rgba(0, 0, 0, 1);
+    display: grid;
+    grid-template-columns: 2fr, 6fr, 1fr;
+    grid-template-areas: "image title details notes";
+    position: relative;
+}
+
+.action img {
+    grid-area: image;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.action-details {
+    grid-area: details;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+.action-title {
+    grid-area: title;
+    font-weight: bold;
+}
+
+.action-notes {
+    grid-area: notes;
+}
+
+
+/* --------Controller Info Page--------- */
+
+
+
+
+/* -------------Music Page-------------- */
+
+
+
+
+/* -------------Alarms Page------------- */
+
+
+
+
+/* -----------Thermostat Page----------- */
