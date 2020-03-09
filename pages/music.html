@@ -14,20 +14,20 @@
 
         <title>Music Collection</title>
     </head>
-    <body class="grey lighten-4">
+    <body id="music" class="light-blue lighten-4">
 
         <!-- Top Navigation Button -->
         <nav class="z-depth-0">
             <div class="nav-wrapper container">
-                <a href="/">Arduino <span>Controller</span></a>
-                <span class="right grey-text text-darken-1">
+                <a href="/pages/index.html">Arduino <span>Controller</span></a>
+                <span class="right white-text text-darken-1">
                 <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
                 </span>
             </div>
         </nav>
 
         <!-- Side Navigation -->
-        <ul id="side-menu" class="sidenav side-menu">
+        <ul id="side-menu" class="sidenav side-menu blue lighten-4">
             <li>
                 <a class="subheader">Navigation</a>
             </li>
@@ -36,7 +36,7 @@
             </li>
             <li>
                 <a href="/pages/index.html" class="waves-effect">Home
-                    <i class="material-icons">home</i>
+                    <i class="material-icons blue-text text-darken-4">home</i>
                 </a>
             </li>
             <li>
@@ -44,7 +44,7 @@
             </li>
             <li>
                 <a href="/pages/controllerinfo.html" class="waves-effect">Controller Info
-                    <i class="material-icons">info</i>
+                    <i class="material-icons blue-text text-darken-4">info</i>
                 </a>
             </li>
             <li>
@@ -52,7 +52,7 @@
             </li>
             <li>
                 <a href="/pages/music.html" class="waves-effect">Music
-                    <i class="material-icons">music_video</i>
+                    <i class="material-icons blue-text text-darken-4">music_video</i>
                 </a>
             </li>
             <li>
@@ -60,7 +60,7 @@
             </li>
             <li>
                 <a href="/pages/alarms.html" class="waves-effect">Alarms
-                    <i class="material-icons">access_alarms</i>
+                    <i class="material-icons blue-text text-darken-4">access_alarms</i>
                 </a>
             </li>
             <li>
@@ -68,7 +68,7 @@
             </li>
             <li>
                 <a href="/pages/Thermostat.html" class="waves-effect">Thermostat
-                    <i class="material-icons">wb_incandescent</i>
+                    <i class="material-icons blue-text text-darken-4">wb_incandescent</i>
                 </a>
             </li>
             <li>
@@ -77,23 +77,29 @@
         </ul>
 
         <!-- content -->
-        <div class="container grey-text">
+        <div class="container">
             <h5 class="center">Music</h5>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, 
-               porro voluptatum illum veniam eaque sunt sit labore provident eligendi! 
-               Voluptate amet suscipit inventore unde maxime atque impedit officia 
-               nobis laboriosam!
+            <p>
+                Welcome to the Music Player!
+                <bR>
+                You can load MP3 files from you local machine to the Arduino.
+                <br>
+                You can also stream from your favorite streaming platform via the URL input. Copy Paste your link!
+
             </p>
-            <div class="divider"></div>
-            <h6>Play Music:</h6>
+            <h6>Local Music:</h6>
+            <label>Directory:<input placeholder="storage/sdcard/music" type="text" name="directory" id="dir"></label>
             <ul>
+                <p>Collection:</p>
                 <li>Some Music 1</li>
                 <li>Some Music 2</li>
                 <li>Some Music 3</li>
                 <li>Some Music 4</li>
             </ul>
+            <div class="divider"></div>
+            <h6>Stream Music</h6>
+            <label>Url:<input type="text" name="source" id="src" value=""></label>
         </div>
-
         <script src="/js/app.js"></script>
     </body>
 </html>

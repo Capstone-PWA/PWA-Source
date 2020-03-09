@@ -4,10 +4,29 @@
     --title: rgba(255, 255, 255, 1);
     --primary: rgba(23, 56, 110, 1);
     --secondary: rgba(34, 83, 163, 1);
-    --tertiary: rgba(30, 105, 227, 1);
+    --tertiary: rgba(42, 75, 200, 1);
+    --gray: rgba(128, 120, 120, 1);
 }
 
 /* ----------Navigation Menus----------- */
+
+.divider {
+    background-color: var(--primary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sidenav .subheader  {
+    color: var(--primary);
+}
+
+.sidenav li>a {
+    color: var(--primary);
+}
+
+.side-menu {
+    color: var(--primary);
+}
 
 nav {
     background: var(--primary);
@@ -23,12 +42,23 @@ nav a span {
     font-weight: bold;
 }
 
-/* Class: Icon in sidenav*/
 nav .sidenav-trigger {
     margin: 0;
 }
 
+nav .sidenav-trigger:hover {
+    cursor: pointer;
+}
+
+i.icon {
+    color: var(--primary);
+}
+
 /* -------------Index Page-------------- */
+
+#index {
+    color: var(--primary);
+}
 
 .action {
     margin-top: 20px;
@@ -39,13 +69,16 @@ nav .sidenav-trigger {
     padding: 10px;
     box-shadow: 0px, 1px, 3px, rgba(0, 0, 0, 1);
     display: grid;
-    grid-template-columns: 2fr, 6fr, 1fr;
-    grid-template-areas: "image title details notes";
+    grid-template-columns: 1fr 20fr;
+    grid-template-areas: "image details title notes content";
     position: relative;
+    cursor: pointer;
+    grid-row: 1;
 }
 
 .action img {
     grid-area: image;
+    grid-row: 1;
     max-width: 64px;
     max-height: 64px;
 }
@@ -53,7 +86,7 @@ nav .sidenav-trigger {
 .action-details {
     grid-area: details;
     margin-top: 6px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .action-title {
@@ -65,20 +98,87 @@ nav .sidenav-trigger {
     grid-area: notes;
 }
 
+.expandable-content {
+    grid-area: content;
+    color: red;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    grid-column: 1 / span 2;
+}
+
+#test {
+    color: red;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 /* --------Controller Info Page--------- */
-
-
+#control {
+    color: var(--primary);
+}
 
 
 /* -------------Music Page-------------- */
 
+#music {
+    color: var(--primary);
+}
 
+#music label {
+    color: var(--primary);
+}
+
+#music input {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+#music input[type=text]:focus {
+    border-bottom: 1px solid var(--secondary);
+    box-shadow: 0 1px 0 0 var(--secondary);
+}
+
+#music ::placeholder {
+    color: var(--gray);
+}
 
 
 /* -------------Alarms Page------------- */
+#alarm {
+    color: var(--primary);
+}
 
+.setAlarm {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
 
+.setAlarm h4 {
+    margin: 0;
+    padding-right: 1rem;
+}
 
+.setAlarm i {
+    padding-right: 1rem;
+    vertical-align: center;
+}
+
+.setAlarm p {
+    margin: 0;
+    padding-left: 8rem;
+    vertical-align: center;
+}
+
+.setAlarm span {
+    font-size: large;
+    vertical-align: bottom;
+}
 
 /* -----------Thermostat Page----------- */
+
+#temp {
+    color: var(--primary);
+}

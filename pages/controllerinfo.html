@@ -11,23 +11,24 @@
         <link href="/css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="/js/materialize.min.js"></script>
+        <script src="/js/app.js"></script>
 
         <title>Controller Information</title>
     </head>
-    <body class="grey lighten-4">
+    <body id="control" class="light-blue lighten-4">
 
         <!-- Top Navigation Button -->
         <nav class="z-depth-0">
             <div class="nav-wrapper container">
-                <a href="/">Arduino <span>Controller</span></a>
-                <span class="right grey-text text-darken-1">
+                <a href="/pages/index.html">Arduino <span>Controller</span></a>
+                <span class="right white-text text-darken-1">
                 <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
                 </span>
             </div>
         </nav>
 
         <!-- Side Navigation -->
-        <ul id="side-menu" class="sidenav side-menu">
+        <ul id="side-menu" class="sidenav side-menu blue lighten-4">
             <li>
                 <a class="subheader">Navigation</a>
             </li>
@@ -36,7 +37,7 @@
             </li>
             <li>
                 <a href="/pages/index.html" class="waves-effect">Home
-                    <i class="material-icons">home</i>
+                    <i class="material-icons blue-text text-darken-4">home</i>
                 </a>
             </li>
             <li>
@@ -44,7 +45,7 @@
             </li>
             <li>
                 <a href="/pages/controllerinfo.html" class="waves-effect">Controller Info
-                    <i class="material-icons">info</i>
+                    <i class="material-icons blue-text text-darken-4">info</i>
                 </a>
             </li>
             <li>
@@ -52,7 +53,7 @@
             </li>
             <li>
                 <a href="/pages/music.html" class="waves-effect">Music
-                    <i class="material-icons">music_video</i>
+                    <i class="material-icons blue-text text-darken-4">music_video</i>
                 </a>
             </li>
             <li>
@@ -60,7 +61,7 @@
             </li>
             <li>
                 <a href="/pages/alarms.html" class="waves-effect">Alarms
-                    <i class="material-icons">access_alarms</i>
+                    <i class="material-icons blue-text text-darken-4">access_alarms</i>
                 </a>
             </li>
             <li>
@@ -68,7 +69,7 @@
             </li>
             <li>
                 <a href="/pages/Thermostat.html" class="waves-effect">Thermostat
-                    <i class="material-icons">wb_incandescent</i>
+                    <i class="material-icons blue-text text-darken-4">wb_incandescent</i>
                 </a>
             </li>
             <li>
@@ -77,18 +78,49 @@
         </ul>
 
         <!-- content -->
-        <div class="container grey-text">
+        <div class="container">
             <h5 class="center">Information</h5>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, 
-               porro voluptatum illum veniam eaque sunt sit labore provident eligendi! 
-               Voluptate amet suscipit inventore unde maxime atque impedit officia 
-               nobis laboriosam!
+            <p>
+                Here you can find all the parts used with the Arduino.
+                <br>
+                Most parts can be purchased as of March 2020, but model availability may depend on the lifespan of the model part.
+                <br>
+                The cost for the parts was a total of $105, but your total may vary.
+
             </p>
             <div class="divider"></div>
-            <h6>Specs:</h6>
+            <h6>Parts List:</h6>
             <ul>
-                <li>Arduino Component 1</li>
-                <li>Arduino Component 1</li>
+                <li>1. Arduino Mega Board</li>
+                <br>
+                <button id="infoBtn1" class="waves-effect waves-light blue darken-3 btn" onclick="OpenInNewTabWinBrowser('https://store.arduino.cc/usa/mega-2560-r3');">Link to Item</button>
+                <div class="divider"></div>
+                <br>
+                <br>
+                <li>2. 3.2" TFT Touch Display</li>
+                <br>
+                <button id="infoBtn2" class="waves-effect waves-light blue darken-3 btn" onclick="OpenInNewTabWinBrowser('https://www.itead.cc/wiki/2.4_TFT_LCD_Touch_Shield_V1');">Link to Item</button>
+                <div class="divider"></div>
+                <br>
+                <br>
+                <li>3. Expansion Board,3.2" TFT LCD Mega Shield </li>
+                <br>
+                <button id="infoBtn3" class="waves-effect waves-light blue darken-3 btn" onclick="OpenInNewTabWinBrowser('https://www.amazon.ca/Touch-Shield-Expansion-Board-Arduino/dp/B075H25WZT');">Link to Item</button>
+                <div class="divider"></div>
+                <br>
+                <br>
+                <li>4. DS3231 IIC Precision Real time Clock Module with AT24C32 Module Arduino</li>
+                <br>
+                <button id="infoBtn4" class="waves-effect waves-light blue darken-3 btn" onclick="OpenInNewTabWinBrowser('https://www.amazon.ca/DS3231-AT24C32-Precision-Module-Arduino/dp/B07D1F45TY/ref=sr_1_1?keywords=DS3231+IIC+Precision+Real+time+Clock+Module+with+AT24C32+Module+Arduino&qid=1583695882&s=industrial&sr=1-1');">Link to Item</button>
+                <div class="divider"></div>
+                <br>
+                <br>
+                <li>5. Mini MP3 DFPlayer Player Module</li>
+                <br>
+                <button id="infoBtn5" class="waves-effect waves-light blue darken-3 btn" onclick="OpenInNewTabWinBrowser('https://www.amazon.ca/gp/product/B07WNRHH8Z/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1');">Link to Item</button>
+                <div class="divider"></div>
+                <br>
+                <br>
             </ul>
         </div>
 
