@@ -70,48 +70,55 @@ i.icon {
     box-shadow: 0px, 1px, 3px, rgba(0, 0, 0, 1);
     display: grid;
     grid-template-columns: 1fr 20fr;
-    grid-template-areas: "image details title notes content";
+    grid-template-rows: 2;
+    grid-template-areas: "image details title notes"
+                         "contenthide contenthide contenthide contenthide";
     position: relative;
     cursor: pointer;
-    grid-row: 1;
 }
 
-.action img {
+.action-img {
     grid-area: image;
     grid-row: 1;
+    grid-column: 1;
     max-width: 64px;
     max-height: 64px;
 }
 
 .action-details {
     grid-area: details;
+    grid-row: 1;
     margin-top: 6px;
     margin-left: 20px;
 }
 
 .action-title {
+    grid-row: 1;
     grid-area: title;
     font-weight: bold;
+    max-width: auto;
 }
 
 .action-notes {
     grid-area: notes;
+    max-width: auto;
 }
 
 .expandable-content {
-    grid-area: content;
+    grid-area: contenthide;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    justify-self: center;
     color: red;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    grid-column: 1 / span 2;
 }
 
-#test {
-    color: red;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+.sample-image {
+    margin-top: 30px;
+    max-width: 100%;
+    max-height: auto;
 }
 
 /* --------Controller Info Page--------- */
